@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-section,
+.product-section {
+  padding: 20px;
+}
+
+.text-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 50%;
+  left: -44px;
+  transform: translateY(-50%) rotate(180deg);
+  font-size: 28px;
+  font-weight: normal;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.sale::after {
+  content: "SALE";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-item .sale-price {
+  color: red;
+}
+
+.product-item .sale-price span {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-item .price {
+  font-weight: bold;
+}
